@@ -45,7 +45,7 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📸 Demo
 
-- [x] ![screenshot](<Screenshot 2026-03-01 at 4.42.50 PM.png>)
+- [x] ![screenshot](<https://github.com/rhy900/ai110-module1show-gameglitchinvestigator-starter/blob/main/Screenshot%202026-03-01%20at%204.42.50%E2%80%AFPM.png>)
 
 ## 🚀 Stretch Features
 
