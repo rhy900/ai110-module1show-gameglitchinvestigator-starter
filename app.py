@@ -90,8 +90,15 @@ low, high = get_range_for_difficulty(difficulty)
 st.sidebar.caption(f"Range: {low} to {high}") # bugg: was previously using hardcoded 1 to 100, not the correct range for the selected difficulty fixed using claude code 
 st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 
+if "difficulty" not in st.session_state:
+    st.session_state.difficulty = difficulty
+
+if st.session_state.difficulty != difficulty:
+    st.session_state.difficulty = difficulty
+    st.session_state.secret = random.randint(low, high)
+
 if "secret" not in st.session_state:
-    st.session_state.secret = random.randint(low, high) # bugg: was previously using hardcoded 1 to 100, not the correct range for the selected difficulty fixed using claude code 
+    st.session_state.secret = random.randint(low, high) # bugg: was previously using hardcoded 1 to 100, not the correct range for the selected difficulty fixed using claude code
 
 if "attempts" not in st.session_state:
     st.session_state.attempts = 0 # bugg: was previously initialized to 1, which meant the player effectively lost an attempt right at the start fixed using claude code

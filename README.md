@@ -26,12 +26,26 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+   the games purpose is to untilze binary search (lol). the games purpose it to guess a number within a certain range based on difficulty and as few guesses as posible 
 - [ ] Detail which bugs you found.
+   1. hard coded number range
+   2. inverse hints 
+   3. typecast to string every other geuss
+   4. starting the game of with one guess
+   5. the test cases did not split the result tuple
+   6. the session was not takin the new difficulty into account when creating the new secreate
 - [ ] Explain what fixes you applied.
+   1. used high and low instead based on the diffculty set for each game mode
+   2. swaped the hints to be correct
+   3. got rid of the typecast
+   4. initilized at zero instead
+   5. spilt into reslut and message
+   6. check if the difficulty is diffrent than the prevoise difficulty if so then we genrate a new secraet with the new difficulty ranges  
+
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [x] ![screenshot](<Screenshot 2026-03-01 at 4.42.50 PM.png>)
 
 ## 🚀 Stretch Features
 
